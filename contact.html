@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Evanson Kariuki</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <main class="contact-container">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" required>
+      <span class="error">This field is required</span>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" required>
+      <span class="error">This field is required</span>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required>
+      <span class="error">Please enter a valid email address</span>
+
+      <label for="queryType">Query Type</label>
+      <select id="queryType" required>
+        <option value="">-- Select --</option>
+        <option value="general">General Enquiry</option>
+        <option value="support">Support Request</option>
+      </select>
+      <span class="error">Please select a query type</span>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+      <span class="error">This field is required</span>
+
+      <div class="consent">
+        <input type="checkbox" id="consent" required>
+        <label for="consent">I consent to being contacted by the team</label>
+      </div>
+      <span class="error">Please consent to being contacted</span>
+
+      <button type="submit">Submit</button>
+      <p id="successMessage" class="success">Message Sent! Thanks for completing the form.</p>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.contact-container {
+  background: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: hsl(187, 24%, 22%);
+  text-align: center;
+}
+
+label {
+  font-weight: 700;
+  margin-top: 1rem;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: hsl(169, 82%, 27%);
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: hsl(169, 82%, 27%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(169, 82%, 22%);
+}
+
+.error {
+  color: hsl(0, 66%, 54%);
+  font-size: 0.8rem;
+  display: none;
+}
+
+.success {
+  margin-top: 1rem;
+  color: hsl(169, 82%, 27%);
+  font-weight: bold;
+  display: none;
+  text-align: center;
+}
